@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ICT105 Team UI</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f7fb;
+      color: #1f2937;
+    }
+    header {
+      background: #2563eb;
+      color: white;
+      padding: 1.5rem 1rem;
+      text-align: center;
+    }
+    main {
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .grid {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 0.85rem;
+      border: 1px solid #d1d5db;
+      border-radius: 10px;
+      font-size: 1rem;
+      box-sizing: border-box;
+    }
+    button {
+      background: #2563eb;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      padding: 0.95rem 1.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #1d4ed8;
+    }
+    .output {
+      background: #eef2ff;
+      padding: 1rem;
+      border-radius: 10px;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ICT105 Team User Interface</h1>
+    <p>Use this page as a starting point for your project UI.</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Project Actions</h2>
+      <div class="grid">
+        <div>
+          <label for="userName">Your Name</label>
+          <input id="userName" type="text" placeholder="Enter your name" />
+        </div>
+        <div>
+          <label for="role">Role</label>
+          <select id="role">
+            <option value="student">Student</option>
+            <option value="leader">Team Leader</option>
+            <option value="developer">Developer</option>
+            <option value="designer">Designer</option>
+          </select>
+        </div>
+      </div>
+      <div style="margin-top:1rem;">
+        <label for="notes">Notes</label>
+        <textarea id="notes" rows="4" placeholder="Write something about your project..."></textarea>
+      </div>
+      <div style="margin-top:1.25rem; text-align:right;">
+        <button id="saveButton">Save Details</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Preview</h2>
+      <div class="output" id="previewOutput">Fill out the form and click "Save Details" to see a preview here.</div>
+    </section>
+  </main>
+
+  <script>
+    const saveButton = document.getElementById('saveButton');
+    const previewOutput = document.getElementById('previewOutput');
+
+    saveButton.addEventListener('click', () => {
+      const name = document.getElementById('userName').value.trim();
+      const role = document.getElementById('role').value;
+      const notes = document.getElementById('notes').value.trim();
+
+      previewOutput.textContent = `Name: ${name || 'N/A'}\nRole: ${role}\nNotes:\n${notes || 'No notes provided.'}`;
+    });
+  </script>
+</body>
+</html>
