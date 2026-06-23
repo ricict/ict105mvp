@@ -1,4 +1,4 @@
-[system-requirements.md](https://github.com/user-attachments/files/29249260/system-requirements.md)
+
 # System Requirements
 
 ## Minimum Final Prototype Functionalities
