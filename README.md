@@ -3,11 +3,11 @@
 
 ## Minimum Final Prototype Functionalities
 
-These requirements define the minimum prototype functionalities that each ICT105 student group must address in the final prototype. The requirements are designed to be platform-independent and can align with different project topics, such as booking systems, reporting systems, inventory systems, learning platforms, dashboards, marketplace concepts, reminder systems, service request systems, or other IT-based solutions.
+These requirements define the minimum prototype functionalities that each group must address in the final prototype. The requirements are designed to be platform-independent and can align with different project topics, such as booking systems, reporting systems, inventory systems, learning platforms, dashboards, marketplace concepts, reminder systems, service request systems, or other IT-based solutions.
 
 | Req ID | Minimum Prototype Functionality | What Students Must Show in Final Prototype |
 | --- | --- | --- |
-| **FR-01** | **Clear problem-specific homepage or landing screen** | The prototype must clearly show the project title, target user, problem being solved, and main action the user can take. |
+| **FR-01**   | **Clear problem-specific homepage or landing screen** | The prototype must clearly show the project title, target user, problem being solved, and main action the user can take. |
 | **FR-02** | **Primary user pathway** | The prototype must show how the main user moves through the system from start to finish. Example: open system → submit request → check status → receive result. |
 | **FR-03** | **User input or data submission feature** | The system must allow users to submit information related to the selected case. Example: report item, book appointment, register event, submit complaint, add inventory, request service. |
 | **FR-04** | **Data storage or record management** | Submitted data must be stored, displayed, or simulated through a database, spreadsheet, local storage, JSON file, Airtable, Firebase, Google Sheet, or another suitable tool. |
